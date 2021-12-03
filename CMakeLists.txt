@@ -12,9 +12,13 @@ endif()
 
 include_directories(include)
 
-add_subdirectory(Backtracking)
-foreach(src ${BTSRC})
-	add_executable(${src} Backtracking/${src}.cpp)
-endforeach()
+# add_subdirectory(Backtracking)
+# foreach(src ${BTSRC})
+# 	add_executable(${src} Backtracking/${src}.cpp)
+# endforeach()
 
+add_subdirectory(DynamicProgramming)
+foreach(src ${BTSRC})
+	add_executable(${src} DynamicProgramming/${src}.cpp)
+endforeach()
 
